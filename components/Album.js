@@ -19,11 +19,10 @@ const Album = ({ id,  cover, title, liked }) => {
           alert(err)
         }
       }
-
-      console.log(liked);
+      
 
   return (
-    <div className='bg-white shadow-xl rounded-md'>
+    <div className='bg-white shadow-xl rounded-md hover:scale-105 transition duration-200'>
         <div>
               <img src={cover} alt="" className='w-full object-cover rounded-t-md' />
               <div className='flex px-2 py-2 items-center justify-between'>

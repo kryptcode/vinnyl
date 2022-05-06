@@ -9,6 +9,7 @@ import Album from '../components/Album'
 
 export default function Home() {
   const [albums, setAlbums] = useState([])
+  
 
   useEffect(() => {
     const q = query(collection(db, 'albums'), orderBy('created', 'desc'))
@@ -19,6 +20,12 @@ export default function Home() {
       })))
     })
   }, [])
+
+  const likedAlbums = albums.filter(album => album.data.liked == true).length
+
+  console.log(likedAlbums);
+
+
   return (
     <div className="bg-pink-100 min-h-screen">
       <Head>
@@ -27,7 +34,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <Header likedAlbums={likedAlbums} />
 
       <div className='mt-8 mx-auto w-[90%] grid grid-cols-1 md:grid-cols-3 justify-between gap-10'>
         {
