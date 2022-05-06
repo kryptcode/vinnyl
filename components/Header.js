@@ -5,7 +5,7 @@ const Header = ({ likedAlbums }) => {
   const [counter, setCounter] = useState()
 
   return (
-    <header className='bg-white shadow-xl py-4 px-16 flex justify-between items-end'>
+    <header className='bg-white shadow-xl py-4 px-8 md:px-16 flex justify-between items-end'>
         <h1 className='text-4xl font-semibold tracking-widest underline decoration-4'>
         VINNYL
         </h1>
