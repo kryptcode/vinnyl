@@ -5,13 +5,14 @@ import { getFirestore } from 'firebase/firestore'
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+
 const firebaseConfig = {
-  apiKey: "AIzaSyBBnq6MxbAE7g7e2Yw0Q7UIxFhKTPeciys",
-  authDomain: "vinnyl-de6af.firebaseapp.com",
-  projectId: "vinnyl-de6af",
-  storageBucket: "vinnyl-de6af.appspot.com",
-  messagingSenderId: "100072962793",
-  appId: "1:100072962793:web:1322155d14faf47f438e78"
+  apiKey: "AIzaSyAkA0-nhePn065p8QM7thGn_OTZvzx1Tso",
+  authDomain: "vinyl-916f9.firebaseapp.com",
+  projectId: "vinyl-916f9",
+  storageBucket: "vinyl-916f9.appspot.com",
+  messagingSenderId: "311670930642",
+  appId: "1:311670930642:web:dd19130f285a8d50fb010b"
 };
 
 // Initialize Firebase
